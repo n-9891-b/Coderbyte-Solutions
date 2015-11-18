@@ -2,7 +2,7 @@
 function NumberAddition(str) {
     // First we charge our input string into an array by splitting it at every alphabetic character.
     // Note that this regex expression will match any capital or lowercase letter.
-    str = str.split(/[a-zA-Z]/);
+    str = str.split(/[^0-9]/);
     // Next, we declare a sum variable to hold our answer.
     var sum = 0;
     // After that, we iterate over each element in our modified array...
