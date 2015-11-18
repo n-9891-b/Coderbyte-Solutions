@@ -19,7 +19,7 @@ function NumberAddition(str) {
 
 // Without Comments
 function NumberAddition(str) {
-    str = str.split(/[a-zA-Z]/);
+    str = str.split(/[^0-9]/);
     var sum = 0;
     
     for (var i = 0; i < str.length; i++) {
